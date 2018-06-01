@@ -1,0 +1,264 @@
+{
+	"ImportPath": "github.com/niwho/freedom",
+	"GoVersion": "go1.10",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/aristanetworks/goarista/monotime",
+			"Comment": "ockafka-v0.0.2-225-g4b9133d",
+			"Rev": "4b9133d8ba77cab2812e147080198080b65b19b2"
+		},
+		{
+			"ImportPath": "github.com/btcsuite/btcd/btcec",
+			"Comment": "BTCD_0_12_0_BETA-761-gbc09449",
+			"Rev": "bc0944904505aab55e089371a892be2f87883161"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/common",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/common/hexutil",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/common/math",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/common/mclock",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/crypto",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/crypto/ecies",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/crypto/secp256k1",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/crypto/sha3",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/event",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/log",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/metrics",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/p2p",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/p2p/discover",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/p2p/discv5",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/p2p/nat",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/p2p/netutil",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/ethereum/go-ethereum/rlp",
+			"Comment": "v1.8.8-26-gd6ed2f67a",
+			"Rev": "d6ed2f67a8cdb07ce7b4eaea93452afb0cdbaa23"
+		},
+		{
+			"ImportPath": "github.com/go-stack/stack",
+			"Comment": "v1.7.0",
+			"Rev": "259ab82a6cad3992b4e21ff5cac294ccb06474bc"
+		},
+		{
+			"ImportPath": "github.com/golang/snappy",
+			"Rev": "553a641470496b2327abcac10b36396bd98e45c9"
+		},
+		{
+			"ImportPath": "github.com/huin/goupnp",
+			"Rev": "1395d1447324cbea88d249fbfcfd70ea878fdfca"
+		},
+		{
+			"ImportPath": "github.com/huin/goupnp/dcps/internetgateway1",
+			"Rev": "1395d1447324cbea88d249fbfcfd70ea878fdfca"
+		},
+		{
+			"ImportPath": "github.com/huin/goupnp/dcps/internetgateway2",
+			"Rev": "1395d1447324cbea88d249fbfcfd70ea878fdfca"
+		},
+		{
+			"ImportPath": "github.com/huin/goupnp/httpu",
+			"Rev": "1395d1447324cbea88d249fbfcfd70ea878fdfca"
+		},
+		{
+			"ImportPath": "github.com/huin/goupnp/scpd",
+			"Rev": "1395d1447324cbea88d249fbfcfd70ea878fdfca"
+		},
+		{
+			"ImportPath": "github.com/huin/goupnp/soap",
+			"Rev": "1395d1447324cbea88d249fbfcfd70ea878fdfca"
+		},
+		{
+			"ImportPath": "github.com/huin/goupnp/ssdp",
+			"Rev": "1395d1447324cbea88d249fbfcfd70ea878fdfca"
+		},
+		{
+			"ImportPath": "github.com/jackpal/go-nat-pmp",
+			"Comment": "v1.0.1-6-g28a68d0",
+			"Rev": "28a68d0c24adce1da43f8df6a57340909ecd7fdd"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb/cache",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb/comparer",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb/errors",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb/filter",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb/iterator",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb/journal",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb/memdb",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb/opt",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb/storage",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb/table",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "github.com/syndtr/goleveldb/leveldb/util",
+			"Rev": "5d6fca44a948d2be89a9702de7717f0168403d3d"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html",
+			"Rev": "5ccada7d0a7ba9aeb5d3aca8d3501b4c2a509fec"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html/atom",
+			"Rev": "5ccada7d0a7ba9aeb5d3aca8d3501b4c2a509fec"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html/charset",
+			"Rev": "5ccada7d0a7ba9aeb5d3aca8d3501b4c2a509fec"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/charmap",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/htmlindex",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/internal",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/internal/identifier",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/japanese",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/korean",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/simplifiedchinese",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/traditionalchinese",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/unicode",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/internal/tag",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/internal/utf8internal",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/language",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/runes",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		},
+		{
+			"ImportPath": "golang.org/x/text/transform",
+			"Rev": "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+		}
+	]
+}
