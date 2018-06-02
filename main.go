@@ -14,19 +14,9 @@ import (
 
 var (
 	logger = log.New()
-
-	proto = p2p.Protocol{
-		Name:    "wexchange",
-		Version: 1,
-		Length:  1,
-		Run: func(p *p2p.Peer, rw p2p.MsgReadWriter) error {
-
-			return nil
-		},
-	}
 )
 
-func GetECDSA(mark int) (pk *ecdsa.PrivateKey, err error) {
+func GetECDSADeprete(mark int) (pk *ecdsa.PrivateKey, err error) {
 	// todo: load from file
 	var buf []byte
 	if buf, err = ioutil.ReadFile(fmt.Sprintf("p_%d", mark)); err == nil {
