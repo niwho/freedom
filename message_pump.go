@@ -54,6 +54,14 @@ type MsgPump struct {
 	// 聚合收到的信息
 	//broadReceive event.Feed
 	//chReceive    chan []byte
+	consumer func(*p2p.Peer, []byte) error
+}
+
+func InitPump(consumer func(*p2p.Peer, []byte) error) {
+	PumpInstance = &MsgPump{
+		consumer: consumer,
+	}
+	PumpInstance.init()
 }
 
 func (mp *MsgPump) init() {
@@ -76,6 +84,9 @@ func (mp *MsgPump) getPeer(id discover.NodeID) *Peer {
 
 func (mp *MsgPump) Receive(p *p2p.Peer, data []byte) error {
 	// callback user function
+	if mp.consumer != nil {
+		mp.consumer(p, data)
+	}
 	return nil
 }
 
@@ -111,7 +122,7 @@ func (mp *MsgPump) GetRun() func(p *p2p.Peer, rw p2p.MsgReadWriter) error {
 		peer.sendCh = make(chan innerMsg, 1)
 		sub := mp.broad.Subscribe(peer.sendCh)
 		quit := make(chan struct{}, 1)
-
+		logger.Info("connectttt", "peer", p)
 		var wg sync.WaitGroup
 		wg.Add(2)
 		go func() {
@@ -162,6 +173,7 @@ func (mp *MsgPump) GetRun() func(p *p2p.Peer, rw p2p.MsgReadWriter) error {
 		delete(mp.peers, p.ID())
 		mp.mu.Unlock()
 
+		logger.Info("disconnectttt", "peer", p)
 		return fmt.Errorf("done:%s", p.ID)
 	}
 }
@@ -179,8 +191,11 @@ func (mp *MsgPump) GetRun() func(p *p2p.Peer, rw p2p.MsgReadWriter) error {
 //		}
 //	}
 //}()
+func (mp *MsgPump) Start2(cfg p2p.Config) error {
+	return nil
+}
 func (mp *MsgPump) Start(listenAddr string, pk *ecdsa.PrivateKey, sn []*discover.Node) error {
-
+	proto.Run = mp.GetRun()
 	conf := p2p.Config{
 		PrivateKey:      pk,
 		MaxPeers:        30,
@@ -192,12 +207,13 @@ func (mp *MsgPump) Start(listenAddr string, pk *ecdsa.PrivateKey, sn []*discover
 		StaticNodes:     sn,
 		Protocols:       []p2p.Protocol{proto},
 		ListenAddr:      listenAddr,
-		Logger:          logger,
+		//		Logger:          logger,
 	}
 
 	svr := p2p.Server{
 		Config: conf,
 	}
+	mp.server = &svr
 	return svr.Start()
 }
 
